@@ -1,0 +1,11 @@
+name: IDOR Test Workflow
+on: [push]
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for testing
+        run: sleep 30
+      - name: Hello World
+        run: echo "Acest workflow este activ pentru testare"
